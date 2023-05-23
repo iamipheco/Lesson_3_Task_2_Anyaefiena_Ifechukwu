@@ -23,10 +23,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -50,4 +46,253 @@ table {
 
 
 /* Write your css below here */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	background-color: #f7f7f7;
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+  }
+  
+  header {
+	background-color: moccasin;
+	padding: 20px;
+  }
+  
+  .nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .logo-wrapper {
+	display: flex;
+	align-items: center;
+  }
+  
+  .nav-links {
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 50px;
+  }
+  
+  header img.logo-header {
+	height: 60px;
+	width: 65px;
+  }
+  
+  h1 {
+	color: brown;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	color: indianred;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  h2 {
+	font-size: 30px;
+  }
+  
+  h3,
+  h4,
+  h5 {
+	font-size: 20px;
+	padding: 10px 0.1px 0.1px;
+  }
+  
+  h5 {
+	color: indianred;
+	font-size: 17px;
+	padding-top: 100px;
+  }
+  
+  h4 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  aside a {
+	color: darkslategray;
+	text-decoration: none;
+  }
 
+  nav ul a {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 17px;
+	color: crimson;
+	text-decoration: none;
+  }
+
+  aside a:hover {
+	color: peru;
+  }
+  
+  nav ul a:hover {
+	color: orangered;
+	text-decoration: none;
+  }
+  
+  .main-content {
+	background-color: bisque;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .left-column {
+	background-color: lightyellow;
+	padding: 30px;
+	flex: 3;
+	
+  }
+  
+  div img.petro-img {
+	height: 500px;
+	float: left;
+	padding: 0.1px 20px 10px;
+	max-width: 100%;
+  }
+  
+  .right-column {
+	background-color: blanchedalmond;
+	padding: 30px;
+	flex: 1;
+	min-width: 300px;
+	max-width: 400px;
+  }
+ 
+  .subscribe > p {
+	padding-bottom: 15px;
+  }
+  
+  input[type='text'] {
+	background-color: palegoldenrod;
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 10px;
+
+  }
+  
+  input[type='submit'] {
+	background-color: brown;
+	color: blanchedalmond;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	width: 100px;
+	height: 40px;
+	font-size: 12px;
+	font-weight: 700;
+  }
+  
+  input[type='submit']:hover {
+	background-color: chocolate;
+  }
+  
+  footer {
+	background-color: sienna;
+	padding: 30px;
+	text-align: center;
+	color: khaki;
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile phones/Small screens */
+  @media screen and (max-width: 34em) {
+	header {
+	  padding: 20px;
+	}
+
+	div img.petro-img {
+	  width: 550px;
+	  height: 300px;
+	  padding: 0;
+	}
+
+	.nav-links {
+	  display: none;
+	}
+  
+	div img.logo-header {
+	  width: 40px;
+	  height: 40px;
+	}
+
+	.nav-header {
+		justify-content: center;
+	}
+  
+	h1 {
+	  font-size: 20px;
+	}
+  
+	.left-column,
+	.right-column {
+	  margin: auto;
+	  min-width: 100%;
+	}
+  }
+  /* Tablet phones/Medium screens */
+  @media only screen and (min-width: 34em) and (max-width: 53em) {
+	div img.petro-img {
+		height: 400px;
+		width:850px ;
+		padding: 0;
+	  }
+	
+	.nav-header {
+		flex-direction: column;
+	}
+
+	.nav-links{
+		padding-top: 25px;
+
+	}
+
+	.main-content {
+		flex-direction: column;
+	}
+
+	.left-column,
+	.right-column {
+	  margin: auto;
+	  min-width: 100%;
+	}
+
+  }
+	
+  /* Laptops and Larger screens */
+  @media only screen and (min-width: 53em) and (max-width: 65em) {
+	div img.petro-img {
+		height: 500px;
+		width:1000px ;
+		padding: 0;
+	  }
+	
+	.left-column {
+	  min-width: 100%;
+	}
+  
+	.right-column {
+	  min-width: 100%;
+	}
+  }
+  
