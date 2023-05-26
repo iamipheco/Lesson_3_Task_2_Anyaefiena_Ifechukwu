@@ -216,7 +216,7 @@ table {
   /* Media Queries */
   
   /* Mobile phones/Small screens */
-  @media screen and (max-width: 34em) {
+  @media screen and (width <= 34em) {
 	header {
 	  padding: 20px;
 	}
@@ -250,8 +250,9 @@ table {
 	  min-width: 100%;
 	}
   }
+
   /* Tablet phones/Medium screens */
-  @media only screen and (min-width: 34em) and (max-width: 53em) {
+  @media only screen and (width >= 34em) and (width <= 53em) {
 	div img.petro-img {
 		height: 400px;
 		width:850px ;
@@ -280,7 +281,7 @@ table {
   }
 	
   /* Laptops and Larger screens */
-  @media only screen and (min-width: 53em) and (max-width: 65em) {
+  @media only screen and (width >= 53em) and (width <= 65em) {
 	div img.petro-img {
 		height: 500px;
 		width:1000px ;
