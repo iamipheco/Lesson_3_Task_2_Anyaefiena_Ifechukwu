@@ -1,4 +1,5 @@
-## This repository contains the code for a simple blog website created with HTML, a web page layout using CSS margins, borders, and padding.
+## This repository contains the code for a simple blog website created with HTML and CSS.
+- This is a web page layout using CSS margins, borders, and padding.
 
 ## Files
 - index.html This is the main page of the blog. It contains information about the blog.
